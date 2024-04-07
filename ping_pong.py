@@ -28,11 +28,11 @@ class Player(GameSprite):
 background = transform.scale(image.load('фон.png'),(500, 500))
 window = display.set_mode((500, 500))
 
-back = (200, 255, 255)
-win_width = 700
-win_height = 500
-window = display.set_mode((win_width, win_height))
-window.fill(back)
+# back = (200, 255, 255)
+# win_width = 700
+# win_height = 500
+# window = display.set_mode((win_width, win_height))
+# window.fill(back)
 
 clock = time.Clock()
 FPS = 60
@@ -40,7 +40,7 @@ game = True
 finish = False
 
 racket1 = Player('ракетка.png', 30, 200, 150, 50, 4)
-racket2 = Player('ракетка.png', 520, 200, 150, 50, 4)
+racket2 = Player('ракетка.png', 320, 200, 150, 50, 4)
 
 while game:
     for e in event.get():
